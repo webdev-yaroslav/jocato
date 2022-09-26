@@ -1,0 +1,108 @@
+@import "helpers/vars";
+@import "helpers/normalize";
+@import "helpers/basic";
+@import "catalog";
+@import "leather";
+@import "automobile";
+@import "about";
+@import "header";
+@import "footer";
+@import "navbar";
+@import "index";
+header {
+    background-image: url('@img/headerbg2.png');
+    background-repeat: no-repeat;    
+    background-position: center center;   
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-size:  18px;
+    color: white;
+    @media(max-width: $screenXL) {
+        font-size: 16px;
+    }
+    @media(max-width: $screenM) {
+        font-size: 12px;
+    }
+    .menu-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 42px;
+        .logo {
+            display: flex;
+            align-items: center;
+            img {
+                width: 60px;
+                height: 60px;
+                @media(max-width: $screenL) {
+                    width: 50px;
+                    height: 50px;
+                }
+                @media(max-width: $screenM) {
+                    width: 40px;
+                    height: 40px;
+                }
+                @media(max-width: $screenS) {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            b {
+                text-transform: uppercase;
+                padding-left: 15px;
+                font-size: 34px;
+                @media(max-width: $screenXL) {
+                    font-size: 30px;
+                }
+                @media(max-width: $screenL) {
+                    font-size: 26px;
+                }
+                @media(max-width: $screenM) {
+                    font-size: 22px;
+                }
+            }
+            b:hover {
+                color: #F58F00;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            li:hover {
+                border-bottom: 2px solid #F58F00;
+            }
+            li:not(:last-child) {
+                margin-right: 50px;
+                @media(max-width: $screenL) {
+                    margin-right: 30px;
+                }
+                @media(max-width: $screenM) {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .phone  {
+            display: flex;
+            align-items: center;
+            img {
+                width: 32px;
+                height: 32px;
+                @media(max-width: $screenL) {
+                    width: 22px;
+                    height: 22px;
+                }
+                @media(max-width: $screenM) {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .number {
+                margin-left: 5px;
+            }
+            .number:hover {
+                border-bottom: 2px solid #F58F00;
+            }
+        }
+    }
+}

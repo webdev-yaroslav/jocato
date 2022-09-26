@@ -1,0 +1,64 @@
+extends html/layout/_layout
+block vars
+  - var pageName = 'Изделия из кожи ручной работы'
+
+block content
+  .page-content
+    section.main
+      .hero
+        p Мастерская по изготовлению изделий из натуральной кожи ручной работы
+    section.craft
+      .container 
+        h1 наши изделия
+        .craft__wrapper
+          .craft__items 
+            a(href="").hover-text-one.coshel-adap
+              figure.effect-text-one 
+                img(src="@img/coshel.png", alt="кошельки")
+                figcaption
+                  h3 кошельки
+            a(href="").hover-text-one.coshel-adap
+              figure.effect-text-one 
+                img(src="@img/bags.png", alt="сумки")
+                figcaption
+                  h3 сумки
+            a(href="").hover-text-one 
+              figure.effect-text-one 
+                img(src="@img/remni.png", alt="ремни")
+                figcaption
+                  h3 ремни
+            a(href="").hover-text-one.oblozh-adap 
+              figure.effect-text-one 
+                img(src="@img/oblozh.png", alt="аксессуары")
+                figcaption
+                  h3 аксессуары
+            a(href="catalog.html").lookingcatalog
+              h3 смотреть каталог
+          //- a(href="#works").undertext примеры работ
+    section.work
+      .container
+        h1 наши работы  
+        #works.work__items 
+          .work__item.bag-adap
+            img(src="@img/work/bagmain.png", alt="Сумка")
+          .work__item.remen-adap
+            img(src="@img/work/remenmain.png", alt="Ремень")
+          .work__item.rule-adap
+            img(src="@img/work/rulmain.png", alt="Обложки")
+          .work__item.obl-adap
+            img(src="@img/work/oblozhkimain.png", alt="Руль")
+    section.contacts 
+      #contact.container 
+        h1 контакты
+        .contacts__wrapper 
+          ul 
+            li Пишите нам по всем вопросам, будем рады вам помочь!
+            li Электронная почта: 
+              a(href="chayka1968@yandex.ru") chayka1968@yandex.ru
+            li Звоните и спрашивайте:
+              a(href="tel:+79134005588") +7 913 400-55-88
+            li Подпсисывайтесь на нашу группу 
+              a(href="https://vk.com/public207126746") Вконтакте
+              img(src="@img/svg/vkontakte.svg", alt="Вконтакте")
+            li Вы можете нас найти по адресу: г. Новокузнецк, ул.Курако, 51А, кор.14
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1179.2160678723615!2d87.0953010158086!3d53.76399397917206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42d0c094cf35a913%3A0x32f260e8ec81cdce!2z0L_RgC4g0JrRg9GA0LDQutC-LCA1MdCQLCDQndC-0LLQvtC60YPQt9C90LXRhtC6LCDQmtC10LzQtdGA0L7QstGB0LrQsNGPINC-0LHQuy4sIDY1NDAyNw!5e0!3m2!1sru!2sru!4v1661095425152!5m2!1sru!2sru' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')

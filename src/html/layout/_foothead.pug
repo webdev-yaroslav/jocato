@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru")
+	block vars
+	include ../includes/_head
+
+	body(class= bodyClass)
+		include ../includes/_headertwo
+			
+		block content
+			
+
+			
+		if !footer
+			include ../includes/_footer
+			script(src="js/app.min.js")

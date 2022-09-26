@@ -1,0 +1,22 @@
+extends html/layout/_foothead
+block vars
+  - var pageName = 'JOCATO - Изделия из кожи'
+
+block content
+  .page-content
+    section.leather
+      .container
+        .leather__menu
+          h1 изделия из кожи
+          ul 
+            li: a(href="") Кошельки
+            li: a(href="") Сумки
+            li: a(href="") Ремни
+            li: a(href="") Аксессуары
+        .leather__items
+          h2 кошельки
+          .leather__items-wrapper
+            .leather__item
+              .leather__item-img
+                img(src="@img/catalog/leather/coshel-item1.png", alt="Кошелёк")
+              button Добавить в корзину

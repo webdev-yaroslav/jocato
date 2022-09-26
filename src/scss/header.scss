@@ -1,0 +1,50 @@
+.second-header {
+    background-color: #303032;
+    color: white;
+    padding: 10px;
+    font-size:  18px;
+    .menu-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .logo {
+            display: flex;
+            align-items: center;
+            img {
+                width: 60px;
+                height: 60px;
+            }
+            b {
+                text-transform: uppercase;
+                padding-left: 15px;
+                font-size: 34px;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            li:hover {
+                border-bottom: 2px solid #F58F00;
+            }
+            li:not(:last-child) {
+                margin-right: 50px;
+            }
+        }
+        a {
+           img {
+                width: 32px;
+                height: 32px;
+            } 
+        }
+        .basket {
+            svg {
+                width: 32px;
+                height: 32px;
+                path:hover {
+                    fill: #fff;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
