@@ -7,7 +7,7 @@
 @import "about";
 @import "header";
 @import "footer";
-@import "navbar";
+// @import "navbar";
 @import "index";
 header {
     background-image: url('@img/headerbg2.png');
@@ -29,6 +29,9 @@ header {
         align-items: center;
         justify-content: space-evenly;
         margin-top: 42px;
+        .hamb {
+            display: none;
+        }
         .logo {
             display: flex;
             align-items: center;
@@ -105,4 +108,7 @@ header {
             }
         }
     }
+}
+.popup {
+    display: none;
 }
