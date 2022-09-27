@@ -31,11 +31,25 @@ header {
         margin-top: 60px;
         @media(max-width: 1000px) {
             justify-content: space-between;
+            padding: 0px 20px;
         }
         .hamb {
             display: none;
             @media(max-width: 1000px) {
                 display: flex;
+                align-items: center;
+            }
+            .hamb__field {
+                padding: 10px 20px;
+                cursor: pointer;
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 3px;
+                    margin: 6px auto;
+                    background-color: white;
+                    transition: 0.2s;
+                }
             }
         }
         .logo {
@@ -126,4 +140,18 @@ header {
 }
 .popup {
     display: none;
+    @media(max-width: 1000px) {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+        .open {
+            left: 0;
+        }
+    }
 }

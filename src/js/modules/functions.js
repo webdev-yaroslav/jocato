@@ -14,29 +14,3 @@ export function isWebp() {
         document.documentElement.classList.add(className);
     });
 }
-
-// function testWebP(callback) {
-//     if(!window.createImageBitmap){
-//         callback(false);
-//         return;
-//     }
-
-//     var webpdata = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=';
-
-//     return fetch(webpdata).then(function(response){
-//         return response.blob();
-//     }).then(function(blob){
-//         createImageBitmap(blob).then(function(){
-//             return callback(true);
-//         }, function(){
-//             return callback(false);
-//         });
-//     });
-// }
-
-// export function isWebp() {
-//     testWebP(function (support) {
-//         let className = support === true ? 'webp' : 'no-webp';
-//         document.documentElement.classList.add(className);
-//     });
-// }
