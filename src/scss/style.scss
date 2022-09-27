@@ -7,7 +7,6 @@
 @import "about";
 @import "header";
 @import "footer";
-// @import "navbar";
 @import "index";
 header {
     background-image: url('@img/headerbg2.png');
@@ -24,87 +23,103 @@ header {
     @media(max-width: $screenM) {
         font-size: 12px;
     }
-    .menu-section {
+    .header__wrap {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin-top: 42px;
+        height: 100%;
+        margin-top: 60px;
+        @media(max-width: 1000px) {
+            justify-content: space-between;
+        }
         .hamb {
             display: none;
+            @media(max-width: 1000px) {
+                display: flex;
+            }
         }
         .logo {
             display: flex;
             align-items: center;
             img {
-                width: 60px;
                 height: 60px;
+                width: 60px;
                 @media(max-width: $screenL) {
-                    width: 50px;
                     height: 50px;
-                }
-                @media(max-width: $screenM) {
-                    width: 40px;
-                    height: 40px;
-                }
-                @media(max-width: $screenS) {
-                    width: 20px;
-                    height: 20px;
+                    width: 50px;
                 }
             }
-            b {
-                text-transform: uppercase;
-                padding-left: 15px;
+            span {
+                font-style: normal;
+                font-weight: 600;
                 font-size: 34px;
-                @media(max-width: $screenXL) {
-                    font-size: 30px;
-                }
+                line-height: 44px;
+                text-transform: uppercase;
+                margin-left: 10px;
                 @media(max-width: $screenL) {
-                    font-size: 26px;
-                }
-                @media(max-width: $screenM) {
-                    font-size: 22px;
+                    font-size: 28px;
                 }
             }
-            b:hover {
-                color: #F58F00;
+            span:hover {
+                color: #f58f00;
+                transition: 0.35s;
             }
         }
         ul {
             display: flex;
-            align-items: center;
-            li:hover {
-                border-bottom: 2px solid #F58F00;
+            li {
+                display: flex;
+                align-items: stretch;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 29px;
+                @media(max-width: $screenL) {
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                }
             }
             li:not(:last-child) {
-                margin-right: 50px;
-                @media(max-width: $screenL) {
-                    margin-right: 30px;
-                }
-                @media(max-width: $screenM) {
-                    margin-right: 20px;
-                }
+                margin-right: 40px;
+            }
+            li:hover {
+                border-bottom: 3px solid #f58f00;
+            }
+            @media(max-width: 1000px) {
+                display: none;
             }
         }
-        .phone  {
+        .phone {
             display: flex;
             align-items: center;
+            @media(max-width: 1000px) {
+                display: none;
+            }
             img {
                 width: 32px;
                 height: 32px;
                 @media(max-width: $screenL) {
-                    width: 22px;
-                    height: 22px;
-                }
-                @media(max-width: $screenM) {
-                    width: 16px;
-                    height: 16px;
+                    height: 24px;
+                    width: 24px;
                 }
             }
-            .number {
+            span {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 29px;
                 margin-left: 5px;
+                @media(max-width: $screenL) {
+                    font-size: 17px;
+                    font-weight: 500;
+                }
             }
-            .number:hover {
-                border-bottom: 2px solid #F58F00;
+            span:hover {
+                border-bottom: 3px solid #f58f00;
             }
         }
     }

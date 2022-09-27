@@ -1,20 +1,19 @@
 header
-  .menu-section
-    .hamb
+  .header__wrap 
+    .hamb 
       #hamb.hamb__field
-        span.bar
-        span.bar
-        span.bar
-    a(href="index.html")#logo.logo
+        span.bar 
+        span.bar 
+        span.bar 
+    a(href="").logo
       img(src="@img/svg/logo.svg", alt="Логотип")
-      b jocato
-    nav.navigation 
-      ul#menu 
-        li: a(href="catalog.html") Каталог
-        li: a(href="about.html") О нас
-        li: a(href="#contact") Контакты
-        li: a(href="") Доставка и оплата
-    li: a(href="tel:89134005588").phone 
-      img(src="@img/svg/phone40.svg", alt="Корзина")
-      .number +8 913 400-55-88
+      span jocato
+    ul#menu 
+      li: a(href="catalog.html") Каталог
+      li: a(href="about.html") О нас
+      li: a(href="#contact") Контакты
+      li: a(href="") Доставка и оплата
+    a(href="tel:89134005588").phone
+      img(src="@img/svg/phone40.svg", alt="Телефон") 
+      span +8 913 400-55-88
 .popup
