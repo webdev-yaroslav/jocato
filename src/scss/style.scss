@@ -23,120 +23,141 @@ header {
     @media(max-width: $screenM) {
         font-size: 12px;
     }
-    .header__wrap {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 100%;
-        margin-top: 60px;
+    .menu-section {
         @media(max-width: 1000px) {
-            justify-content: space-between;
-            padding: 0px 20px;
-            margin-top: 10px;
+            position: fixed;
+            z-index: 10;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
         }
-        .hamb {
-            display: none;
-            @media(max-width: 1000px) {
-                display: flex;
-                align-items: center;
-            }
-            .hamb__field {
-                padding: 10px 20px;
-                cursor: pointer;
-                span {
-                    display: block;
-                    width: 30px;
-                    height: 3px;
-                    margin: 6px auto;
-                    background-color: white;
-                    transition: 0.2s;
-                }
-            }
-        }
-        .logo {
+        .header__wrap {
             display: flex;
             align-items: center;
-            img {
-                height: 60px;
-                width: 60px;
-                @media(max-width: $screenL) {
-                    height: 50px;
-                    width: 50px;
-                }
+            justify-content: space-evenly;
+            height: 100%;
+            margin-top: 60px;
+            @media(max-width: 1000px) {
+                justify-content: space-between;
+                padding: 0px 20px;
+                margin-top: 11px;
+                margin-bottom: 11px;
             }
-            span {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 34px;
-                line-height: 44px;
-                text-transform: uppercase;
-                margin-left: 10px;
-                @media(max-width: $screenL) {
-                    font-size: 28px;
-                }
-            }
-            span:hover {
-                color: #f58f00;
-                transition: 0.35s;
-            }
-        }
-        ul {
-            display: flex;
-            li {
-                display: flex;
-                align-items: stretch;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 29px;
-                @media(max-width: $screenL) {
-                    font-size: 17px;
-                    font-weight: 500;
-                }
-                a {
+            .hamb {
+                display: none;
+                @media(max-width: 1000px) {
                     display: flex;
                     align-items: center;
                 }
-            }
-            li:not(:last-child) {
-                margin-right: 40px;
-            }
-            li:hover {
-                border-bottom: 3px solid #f58f00;
-            }
-            @media(max-width: 1000px) {
-                display: none;
-            }
-        }
-        .phone {
-            display: flex;
-            align-items: center;
-            @media(max-width: 1000px) {
-                display: none;
-            }
-            img {
-                width: 32px;
-                height: 32px;
-                @media(max-width: $screenL) {
-                    height: 24px;
-                    width: 24px;
+                .hamb__field {
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 3px;
+                        margin: 6px auto;
+                        background-color: white;
+                        transition: 0.2s;
+                    }
+                }
+                .hamb__field.active {
+                    span:nth-child(2) {
+                        opacity: 0;
+                    }
+                    span:nth-child(1) {
+                        transform: translateY(8px) rotate(45deg);
+                    }
+                    span:nth-child(3) {
+                        transform: translateY(-8px) rotate(-45deg);
+                    }
                 }
             }
-            span {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 29px;
-                margin-left: 5px;
-                @media(max-width: $screenL) {
-                    font-size: 17px;
-                    font-weight: 500;
+            .logo {
+                display: flex;
+                align-items: center;
+                img {
+                    height: 60px;
+                    width: 60px;
+                    @media(max-width: $screenL) {
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+                span {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 34px;
+                    line-height: 44px;
+                    text-transform: uppercase;
+                    margin-left: 10px;
+                    @media(max-width: $screenL) {
+                        font-size: 28px;
+                    }
+                }
+                span:hover {
+                    color: #f58f00;
+                    transition: 0.35s;
                 }
             }
-            span:hover {
-                border-bottom: 3px solid #f58f00;
+            ul {
+                display: flex;
+                li {
+                    display: flex;
+                    align-items: stretch;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 29px;
+                    @media(max-width: $screenL) {
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                li:not(:last-child) {
+                    margin-right: 40px;
+                }
+                li:hover {
+                    border-bottom: 3px solid #f58f00;
+                }
+                @media(max-width: 1000px) {
+                    display: none;
+                }
             }
-        }
+            .phone {
+                display: flex;
+                align-items: center;
+                @media(max-width: 1000px) {
+                    display: none;
+                }
+                img {
+                    width: 32px;
+                    height: 32px;
+                    @media(max-width: $screenL) {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+                span {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 29px;
+                    margin-left: 5px;
+                    @media(max-width: $screenL) {
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                }
+                span:hover {
+                    border-bottom: 3px solid #f58f00;
+                }
+            }
+        } 
     }
 }
 .popup {
@@ -147,7 +168,7 @@ header {
         left: -100%;
         width: 100%;
         height: 100%;
-        background-color: white;
+        background-color: $hover;
         z-index: 100;
         display: flex;
         transition: 0.3s;
@@ -156,6 +177,22 @@ header {
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+        overflow: auto;
+        li {
+            width: 100%;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 29px;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            color: white;
+        }
     }
 }
 .popup.open {

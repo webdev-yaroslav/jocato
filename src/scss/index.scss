@@ -1,6 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
+body.noscroll {
+    @media(max-width: 1000px) {
+        overflow: hidden;
+    }
+}
 .main {
     .hero {
         position: absolute;
