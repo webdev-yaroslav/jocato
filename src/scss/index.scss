@@ -10,8 +10,8 @@ body.noscroll {
     .hero {
         position: absolute;
         max-width: 1276px;
-        margin-top: 410px;
-        margin-left: 230px;
+        margin-top: 20vw;
+        margin-left: 12vw;
         top: 0;
         left: 0;
         color: white;
@@ -26,16 +26,19 @@ body.noscroll {
             @media(max-width: $screenL) {
                 font-size: 40px;
             }
+            @media(max-width: $screenS) {
+                font-size: 40px;
+            }
         }
         @media(max-width: $screenXL) {
-            margin-top: 300px;
-            margin-left: 150px;
             max-width: 1000px;
         }
         @media(max-width: $screenL) {
-            margin-top: 250px;
-            margin-left: 100px;
             max-width: 850px;
+        }
+        @media(max-width: $screenS) {
+            margin-top: 50vw;
+            max-width: 500px;
         }
     }
 }
@@ -302,6 +305,9 @@ body.noscroll {
                     font-size: 24px;
                     line-height: 29px;
                     margin-bottom: 30px;
+                    @media(max-width: $screenS) {
+                        font-size: 18px;
+                    }
                     a {
                         margin-left: 5px;
                     }
@@ -309,7 +315,6 @@ body.noscroll {
                         color: #F58F00;
                         transition: 0.2s;
                     }
-                    
                     img {
                         margin-left: 5px;
                         width: 30px;
