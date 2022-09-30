@@ -23,12 +23,15 @@ header {
     @media(max-width: $screenM) {
         font-size: 12px;
     }
+    @media(max-width: $screenS) {
+        min-height: 50vh;
+    }
     .menu-section {
         @media(max-width: 1000px) {
             position: fixed;
             z-index: 10;
             width: 100%;
-            background: rgba(255, 255, 255, 0.2);
+            background: $main;
             backdrop-filter: blur(8px);
         }
         .header__wrap {
@@ -168,7 +171,7 @@ header {
         left: -100%;
         width: 100%;
         height: 100%;
-        background-color: $hover;
+        background-color: white;
         z-index: 100;
         display: flex;
         transition: 0.3s;
@@ -191,7 +194,7 @@ header {
             display: flex;
             justify-content: center;
             padding: 20px 0;
-            color: white;
+            color: #000;
         }
     }
 }

@@ -30,6 +30,9 @@ footer {
                     display: flex;
                     justify-content: space-between;
                     ul {
+                        @media(max-width: $screenS) {
+                            display: none;
+                        }
                         li {
                             font-style: normal;
                             font-weight: 500;
@@ -52,8 +55,8 @@ footer {
                             font-size: 17px;
                             line-height: 24px;
                             margin-bottom: 10px;
-                            a {
-                                margin-left: 5px;
+                            @media(max-width: $screenS) {
+                                font-size: 16px;
                             }
                         }
                         .side-text:hover {
@@ -73,15 +76,23 @@ footer {
         }
     }
     .footer-bottom {
-        margin: 20px;
+        margin: 20px 0;
         .container {
             display: flex;
             justify-content: space-between;
-            .side-text {
+            @media(max-width: $screenS) {
+                flex-wrap: wrap;
+            }
+            span {
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 24px;
+            }
+            span:nth-child(2) {
+                @media(max-width: $screenS) {
+                    margin-top: 10px;
+                }
             }
             a:hover {
                 color: #F58F00;

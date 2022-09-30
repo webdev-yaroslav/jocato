@@ -27,18 +27,8 @@ body.noscroll {
                 font-size: 40px;
             }
             @media(max-width: $screenS) {
-                font-size: 40px;
+                font-size: 36px;
             }
-        }
-        @media(max-width: $screenXL) {
-            max-width: 1000px;
-        }
-        @media(max-width: $screenL) {
-            max-width: 850px;
-        }
-        @media(max-width: $screenS) {
-            margin-top: 50vw;
-            max-width: 500px;
         }
     }
 }
@@ -57,6 +47,9 @@ body.noscroll {
             }
             @media(max-width: $screenL) {
                 font-size: 36px;
+            }
+            @media(max-width: $screenS) {
+                font-size: 30px;
             }
         }
         .craft__wrapper {
@@ -104,6 +97,9 @@ body.noscroll {
                                 font-size: 46px;
                                 line-height: 56px;
                                 text-align: center;
+                                @media(max-width: $screenS) {
+                                    font-size: 40px;
+                                }
                             }
                         }
                     }
@@ -179,6 +175,11 @@ body.noscroll {
                         @media(max-width: $screenL) {
                             font-size: 40px;
                         }
+                        @media(max-width: $screenS) {
+                            text-align: center;
+                            font-size: 38px;
+                            padding-bottom: 60px;
+                        }
                     }
                 }
                 .lookingcatalog:hover {
@@ -190,6 +191,9 @@ body.noscroll {
                         -webkit-transition: -webkit-transform 0.35s;
                         transition: transform 0.35s;
                         transform: translate3d(-50%, -110%, 0);
+                        @media(max-width: $screenS) {
+                            transform: translate3d(-50%, -60%, 0);
+                        }
                     }
                 }
             }
@@ -222,6 +226,9 @@ body.noscroll {
             }
             @media(max-width: $screenL) {
                 font-size: 36px;
+            }
+            @media(max-width: $screenS) {
+                font-size: 30px;
             }
         }
         .work__items {
@@ -291,11 +298,14 @@ body.noscroll {
                 font-size: 36px;
             }
             @media(max-width: $screenS) {
-                font-size: 32px;
+                font-size: 30px;
             }
         }
         .contacts__wrapper {
             margin-top: 90px;
+            @media(max-width: $screenS) {
+                margin-top: 40px;
+            }
             ul {
                 li {
                     display: flex;
@@ -306,7 +316,7 @@ body.noscroll {
                     line-height: 29px;
                     margin-bottom: 30px;
                     @media(max-width: $screenS) {
-                        font-size: 18px;
+                        font-size: 14px;
                     }
                     a {
                         margin-left: 5px;
