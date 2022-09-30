@@ -307,6 +307,9 @@ body.noscroll {
                 margin-top: 40px;
             }
             ul {
+                @media(max-width: $screenS) {
+                    flex-wrap: wrap;
+                }
                 li {
                     display: flex;
                     align-items: center;
@@ -316,7 +319,8 @@ body.noscroll {
                     line-height: 29px;
                     margin-bottom: 30px;
                     @media(max-width: $screenS) {
-                        font-size: 14px;
+                        font-size: 16px;
+                        flex-wrap: wrap;
                     }
                     a {
                         margin-left: 5px;
