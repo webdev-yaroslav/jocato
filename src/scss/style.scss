@@ -32,7 +32,6 @@ header {
             z-index: 10;
             width: 100%;
             background: $main;
-            backdrop-filter: blur(8px);
         }
         .header__wrap {
             display: flex;
@@ -45,6 +44,8 @@ header {
                 padding: 0px 20px;
                 margin-top: 11px;
                 margin-bottom: 11px;
+            }
+            @media(max-width: $screenL) {
             }
             .hamb {
                 display: none;
