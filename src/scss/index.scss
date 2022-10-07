@@ -10,7 +10,7 @@ body.noscroll {
     .hero {
         position: absolute;
         max-width: 1276px;
-        margin-top: 20vw;
+        margin-top: 18vw;
         margin-left: 12vw;
         top: 0;
         left: 0;
@@ -29,11 +29,15 @@ body.noscroll {
             @media(max-width: $screenS) {
                 font-size: 30px;
                 line-height: 50px;
+                text-align: center;
             }
         }
         @media(max-width: $screenL) {
             max-width: 850px;
             margin-left: 8vw;
+        }
+        @media(max-width: $screenS) {
+            color: $main;
         }
     }
 }

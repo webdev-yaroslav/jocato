@@ -14,7 +14,7 @@ header {
     background-position: center center;   
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 75vh;
     font-size:  18px;
     color: white;
     @media(max-width: $screenXL) {
@@ -25,6 +25,7 @@ header {
     }
     @media(max-width: $screenS) {
         min-height: 50vh;
+        background: none;
     }
     .menu-section {
         @media(max-width: 1000px) {
