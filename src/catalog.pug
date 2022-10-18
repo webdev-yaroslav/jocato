@@ -8,9 +8,13 @@ block content
       .container
         h1 каталог
         .catalog__wrapper
-          a(href="leather.html")
-            img(src="@img/catalog/coat.png", alt="Изделия из кожи")
-            p изделия из кожи
-          a(href="automobile.html")
-            img(src="@img/catalog/rule.png", alt="Услуги для автомобилей")
-            p услуги для автомобилей
+            a(href="").hover-text-one
+              figure.effect-text-one 
+                img(src="@img/catalog/coat.png", alt="изделия из кожи")
+                figcaption
+                  h3 изделия из кожи
+            a(href="").hover-text-one 
+              figure.effect-text-one 
+                img(src="@img/catalog/rule.png", alt="услуги для автомобилей")
+                figcaption
+                  h3 услуги для автомобилей
