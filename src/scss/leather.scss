@@ -31,8 +31,7 @@
                 }
             }
         }
-        .leather__items {
-            margin-top: 50px;
+        .leather__item {
             h2 {
                 font-style: normal;
                 font-weight: 400;
@@ -41,20 +40,58 @@
                 text-align: left;
                 text-transform: uppercase;
             }
-            .leather__items-wrapper {
-                .leather__item {
-                    button {
-                        background: #303032;
-                        color: white;
-                        border: none;
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 22px;
-                        line-height: 34px;
-                        width: 370px;
-                        height: 60px;
-                        margin-top: 10px;
-                    }
+        }
+        .products {
+            margin: 0 -20px 0 0;
+            .product-wrapper {
+                display: block;
+                position: relative;
+                width: 100%;
+                float: left;
+                transition: width .2s;
+                display: block;
+                margin: 0 20px 20px 0;
+                z-index: 0;
+                @media(min-width: 450px) {
+                    width: 50%;
+                }
+                @media(min-width: 768px) {
+                    width: 33.333%;
+                }
+                @media(min-width: 1000px) {
+                    width: 25%;
+                }
+                img {
+                    width: 250px;
+                    height: 350px;  
+                }
+                button {
+                    margin-top: 10px;
+                    padding: 15px;
+                    text-transform: uppercase;
+                    color: white;
+                    background-color: $main;
+                    width: 250px;
+                }
+                .product-name {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 56px;
+                    text-align: left;
+                    margin-bottom: 130px;
+                    margin-left: 20px;
+                    color: white; 
+                }
+                p {
+                    max-width: 250px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-align: left;
                 }
             }
         }
