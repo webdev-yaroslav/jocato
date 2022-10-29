@@ -13,6 +13,9 @@
                 line-height: 56px;
                 text-align: left;
                 text-transform: uppercase;
+                @media(max-width: 1000px) {
+                    display: none;
+                }
             }
             ul {
                 display: flex;
@@ -22,12 +25,18 @@
                     font-weight: 400;
                     font-size: 18px;
                     line-height: 29px;
+                    @media(max-width: $screenS) {
+                        font-size: 16px;
+                    }
                 }
                 li:not(:last-child) {
                     margin-right: 20px;
                 }
                 li:hover {
                     color: #F58F00;
+                }
+                @media(max-width: 1000px) {
+                    margin-top: 50px;
                 }
             }
         }
@@ -39,6 +48,9 @@
                 line-height: 56px;
                 text-align: left;
                 text-transform: uppercase;
+                @media(max-width: $screenS) {
+                    font-size: 20px;
+                }
             }
         }
         .products {
@@ -46,32 +58,36 @@
             .product-wrapper {
                 display: block;
                 position: relative;
-                width: 100%;
+                width: 250px;
                 float: left;
                 transition: width .2s;
                 display: block;
                 margin: 0 20px 20px 0;
                 z-index: 0;
-                @media(min-width: 450px) {
-                    width: 50%;
-                }
-                @media(min-width: 768px) {
-                    width: 33.333%;
-                }
-                @media(min-width: 1000px) {
-                    width: 25%;
+                @media(max-width: $screenS) {
+                    width: 150px;
                 }
                 img {
                     width: 250px;
-                    height: 350px;  
+                    height: 350px; 
+                    @media(max-width: $screenS) {
+                        width: 150px;
+                        height: 250px;
+                    }
                 }
                 button {
-                    margin-top: 10px;
+                    margin-top: 5px;
                     padding: 15px;
                     text-transform: uppercase;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
                     color: white;
                     background-color: $main;
-                    width: 250px;
+                    width: 100%;
+                    @media(max-width: $screenS) {
+                        font-size: 16px;
+                    }
                 }
                 .product-name {
                     position: absolute;
@@ -82,16 +98,9 @@
                     font-size: 24px;
                     line-height: 56px;
                     text-align: left;
-                    margin-bottom: 130px;
+                    margin-bottom: 125px;
                     margin-left: 20px;
                     color: white; 
-                }
-                p {
-                    max-width: 250px;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    text-align: left;
                 }
             }
         }
