@@ -1,5 +1,5 @@
 .leather {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
     .container {
         .leather__menu {
@@ -57,6 +57,7 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 .products__item {
+                    margin-top: 20px;
                     width: 300px;
                     .product__img {
                         width: 300px; 
@@ -91,16 +92,23 @@
                                 margin-left: 5px;
                             }
                         }
+                        .products__item-name {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
                     }
-                    button {
-                        font-weight: 500;
-                        font-size: 20px;
-                        text-transform: uppercase;
-                        width: 100%;
-                        padding: 10px 0px;
-                        border: none;
-                        color: white;
-                        background-color: #F58F00;
+                    a {
+                        button {
+                            font-weight: 500;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            width: 100%;
+                            padding: 10px 0px;
+                            border: none;
+                            color: white;
+                            background-color: #F58F00;
+                        } 
                     }
                 }
             }

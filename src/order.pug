@@ -1,0 +1,20 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'JOCATO - Изделия из кожи'
+
+block content
+  .page-content
+    section.order
+      .container 
+        h1 сделайте заказ
+        form(action="#") 
+          .form__input 
+            input(type="text" placeholder="Ваше имя")
+          .form__input 
+            input(type="text" placeholder="Введите email")
+          .form__input 
+            input(type="text" placeholder="Введите номер телефона")
+          .form__input.form__message 
+            textarea(type="text" placeholder="Сообщение")
+          .button
+            input(type="button" value="Отправить")

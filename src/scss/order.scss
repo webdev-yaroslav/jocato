@@ -1,0 +1,70 @@
+.order {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .container {
+        h1 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 56px;
+            text-align: left;
+            text-transform: uppercase;
+            @media(max-width: $screenXL) {
+                font-size: 28px;
+            }
+            @media(max-width: $screenL) {
+                font-size: 26px;
+            }
+            @media(max-width: $screenS) {
+                font-size: 24px;
+            }
+        }
+        form {
+            width: 100%;
+            max-width: 1000px;
+            .form__input {
+                height: 50px; 
+                width: 100%; 
+                margin-bottom: 20px;
+                input {
+                    height: 100%;
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                    background: #f0f1f8;
+                    padding: 0 20px;
+                }
+                textarea {
+                    height: 100%;
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                    background: #f0f1f8;
+                    padding: 0 20px;
+                    resize: none; 
+                    padding: 20px;
+                }
+            }
+            .form__message {
+                min-height: 110px;
+            }
+            .button {
+                display: inline-block;
+                input[type="button"] {
+                    color: #fff;
+                    font-size: 18px;
+                    background: $main;
+                    outline: none;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 7px;
+                    transition: 0.2s;
+                    cursor: pointer;
+                }
+                input[type="button"]:hover {
+                    background: $hover;
+                }
+            }
+        }
+    }
+}
