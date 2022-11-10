@@ -9,15 +9,33 @@ block content
         .leather__menu
           h1 изделия из кожи
           ul 
-            li: a(href="") Кошельки
-            li: a(href="") Сумки
-            li: a(href="") Ремни
-            li: a(href="") Аксессуары
-        .leather__item
+            li: a(href="#cash") Кошельки
+            li: a(href="#sum") Сумки
+            li: a(href="#rem") Ремни
+            li: a(href="#acs") Аксессуары
+        #cash.leather__item
           h2 кошельки
+          .products
+            .products__item
+              .product__img 
+                .swiper.mySwiper
+                  .swiper-wrapper
+                    .swiper-slide
+                      img(src="@img/catalog/leather/coshel-item1.png", alt="")
+                    .swiper-slide
+                      img(src="@img/catalog/leather/coshel-item12.png", alt="")
+                  .swiper-pagination
+              ul
+                li.products__item-name Кошелёк 1
+                li В наличии
+                  img(src="@img/ic20-check.svg", alt="")
+                li Ручная работа - каждая сумка Jocato изготовлена мастером вручную;
+                li Натуральная кожа - практичный и долговечный материал;
+                li Цвет на выбор - доступна широкая цветовая палитра.
+              a(href="order.html") 
+                button(onclick="document.getElementById('modal01').style.display='none';" title='Close Modal' type='submit') заказать
 
-
-        .leather__item
+        #sum.leather__item
           h2 сумки
           .products
             .products__item
@@ -71,6 +89,65 @@ block content
                   .swiper-pagination
               ul
                 li.products__item-name Сумка 3
+                li В наличии
+                  img(src="@img/ic20-check.svg", alt="")
+                li Ручная работа - каждая сумка Jocato изготовлена мастером вручную;
+                li Натуральная кожа - практичный и долговечный материал;
+                li Цвет на выбор - доступна широкая цветовая палитра.
+              a(href="order.html") 
+                button(onclick="document.getElementById('modal01').style.display='none';" title='Close Modal' type='submit') заказать
+        #rem.leather__item
+          h2 ремни
+          .products
+            .products__item
+              .product__img 
+                .swiper.mySwiper
+                  .swiper-wrapper
+                    .swiper-slide
+                      img(src="@img/catalog/leather/remen-item1.png", alt="")
+                  .swiper-pagination
+              ul
+                li.products__item-name Ремень 1
+                li В наличии
+                  img(src="@img/ic20-check.svg", alt="")
+                li Ручная работа - каждая сумка Jocato изготовлена мастером вручную;
+                li Натуральная кожа - практичный и долговечный материал;
+                li Цвет на выбор - доступна широкая цветовая палитра.
+              a(href="order.html") 
+                button(onclick="document.getElementById('modal01').style.display='none';" title='Close Modal' type='submit') заказать
+            .products__item
+              .product__img 
+                .swiper.mySwiper
+                  .swiper-wrapper
+                    .swiper-slide
+                      img(src="@img/catalog/leather/remen-item21.png", alt="")
+                  .swiper-pagination
+              ul
+                li.products__item-name Ремень 2
+                li В наличии
+                  img(src="@img/ic20-check.svg", alt="")
+                li Ручная работа - каждая сумка Jocato изготовлена мастером вручную;
+                li Натуральная кожа - практичный и долговечный материал;
+                li Цвет на выбор - доступна широкая цветовая палитра.
+              a(href="order.html") 
+                button(onclick="document.getElementById('modal01').style.display='none';" title='Close Modal' type='submit') заказать
+
+        #acs.leather__item
+          h2 аксессуары
+          .products
+            .products__item
+              .product__img 
+                .swiper.mySwiper
+                  .swiper-wrapper
+                    .swiper-slide
+                      img(src="@img/catalog/leather/acces-item1.png", alt="")
+                    .swiper-slide
+                      img(src="@img/catalog/leather/acces-item12.png", alt="")
+                    .swiper-slide
+                      img(src="@img/catalog/leather/acces-item13.png", alt="")
+                  .swiper-pagination
+              ul
+                li.products__item-name Брелки
                 li В наличии
                   img(src="@img/ic20-check.svg", alt="")
                 li Ручная работа - каждая сумка Jocato изготовлена мастером вручную;

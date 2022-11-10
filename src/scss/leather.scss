@@ -54,7 +54,7 @@
             }
             .products {
                 display: flex;
-                justify-content: space-between;
+                //justify-content: space-between;
                 flex-wrap: wrap;
                 .products__item {
                     margin-top: 20px;
@@ -108,9 +108,17 @@
                             border: none;
                             color: white;
                             background-color: #F58F00;
-                        } 
+                        }
+                        button:hover {
+                            color: #000;
+                            background-color: #ffffff;
+                        }
                     }
                 }
+                .products__item:not(:last-child) {
+                    margin-right: 100px; // Убрать когда будет ровно по три товара
+                } 
+                    
             }
         }
     }

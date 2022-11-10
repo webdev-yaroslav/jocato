@@ -1,0 +1,76 @@
+.delivery {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @media(max-width: 1000px) {
+        margin-top: 100px;
+    }
+    .container {
+        max-width: 800px;
+        h1 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 56px;
+            text-align: left;
+            text-transform: uppercase;
+            @media(max-width: $screenXL) {
+                font-size: 28px;
+            }
+            @media(max-width: $screenL) {
+                font-size: 26px;
+            }
+            @media(max-width: $screenS) {
+                font-size: 24px;
+            }
+        }
+        .delivery__wrapper {
+            h2 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                text-align: right;
+                text-transform: uppercase;
+                color: $hover;
+                @media(max-width: $screenXL) {
+                    font-size: 20px;
+                }
+                @media(max-width: $screenL) {
+                    font-size: 18px;
+                }
+            }
+            .left {
+                text-align: left;
+            }
+            h3 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                text-align: left;
+                text-transform: uppercase;
+            }
+            p {
+                max-width: 800px;
+                margin: 0 auto;                
+                text-align: left;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                a {
+                    color: $hover;
+                    text-decoration: underline;
+                }
+                .contacts {
+                    margin-left: 5px;
+                }
+                @media(max-width: $screenS) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+

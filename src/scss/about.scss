@@ -5,25 +5,37 @@
         h1 {
             font-style: normal;
             font-weight: 400;
-            font-size: 46px;
+            font-size: 30px;
             line-height: 56px;
             text-align: right;
             text-transform: uppercase;
+            @media(max-width: $screenXL) {
+                font-size: 28px;
+            }
+            @media(max-width: $screenL) {
+                font-size: 26px;
+            }
+            @media(max-width: $screenS) {
+                font-size: 24px;
+            }
         }
         .about__text {
             p {
                 max-width: 950px;
+                text-align: left;
                 font-style: normal;
-                font-weight: 300;
-                font-size: 30px;
-                line-height: 49px;
+                font-weight: 400;
+                font-size: 24px;
+                @media(max-width: $screenS) {
+                    font-size: 20px;
+                }
             }
         }
         .about__img {
-            margin-top: 100px;
-            display: flex;
-            justify-content: space-between;
-            
+            margin-top: 50px;
+            img {
+                width: 100%;
+            }
         }
     }
 }
