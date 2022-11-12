@@ -14,12 +14,12 @@ body.noscroll {
         margin-left: 12vw;
         top: 0;
         left: 0;
-        color: white;
         p {
             font-style: normal;
             font-weight: 500;
             font-size: 56px;
             line-height: 68px;
+            color: white;
             @media(max-width: $screenXL) {
                 font-size: 48px;
             }
@@ -30,6 +30,7 @@ body.noscroll {
                 font-size: 30px;
                 line-height: 50px;
                 text-align: center;
+                margin-top: 10px;
             }
         }
         @media(max-width: $screenL) {

@@ -42,6 +42,7 @@
         }
         .leather__item {
             h2 {
+                margin-top: 20px;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 24px;
@@ -57,7 +58,6 @@
                 //justify-content: space-between;
                 flex-wrap: wrap;
                 .products__item {
-                    margin-top: 20px;
                     width: 300px;
                     .product__img {
                         width: 300px; 
