@@ -7,14 +7,14 @@ block content
     section.order
       .container 
         h1 сделайте заказ
-        form(action="#") 
+        form(action="sendmail.php" name="form" method="POST") 
           .form__input 
-            input(type="text" placeholder="Ваше имя")
+            input(type="text" name="name" id="name" placeholder="Ваше имя" data-reg="^[А-ЯЁ][а-яё]*$")
           .form__input 
-            input(type="text" placeholder="Введите email")
+            input(type="text" name="email" id="email" placeholder="Введите email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$")
           .form__input 
-            input(type="text" placeholder="Введите номер телефона")
+            input(type="text" name="phone" id="phone" placeholder="Введите номер телефона" data-reg="^((\+7|7|8)+([0-9]){10})$")
           .form__input.form__message 
-            textarea(type="text" placeholder="Сообщение")
+            textarea(type="text" name="message" placeholder="Сообщение")
           .button
-            input(type="button" value="Отправить")
+            input(type="submit" id="button" value="Отправить")

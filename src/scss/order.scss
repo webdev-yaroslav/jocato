@@ -53,7 +53,7 @@
             }
             .button {
                 display: inline-block;
-                input[type="button"] {
+                input[type="submit"] {
                     color: #fff;
                     font-size: 18px;
                     background: $main;
@@ -64,7 +64,7 @@
                     transition: 0.2s;
                     cursor: pointer;
                 }
-                input[type="button"]:hover {
+                input[type="submit"]:hover {
                     background: $hover;
                 }
             }
