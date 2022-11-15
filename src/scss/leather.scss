@@ -42,7 +42,7 @@
         }
         .leather__item {
             h2 {
-                margin-top: 20px;
+                margin-top: 30px;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 24px;
@@ -55,9 +55,10 @@
             }
             .products {
                 display: flex;
-                //justify-content: space-between;
+                justify-content: space-between;
                 flex-wrap: wrap;
                 .products__item {
+                    margin-top: 20px;
                     width: 300px;
                     .product__img {
                         width: 300px; 
@@ -115,10 +116,6 @@
                         }
                     }
                 }
-                .products__item:not(:last-child) {
-                    margin-right: 100px; // Убрать когда будет ровно по три товара
-                } 
-                    
             }
         }
     }

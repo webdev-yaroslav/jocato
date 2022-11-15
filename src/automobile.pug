@@ -4,3 +4,30 @@ block vars
 
 block content
   .page-content
+    section.automobile
+      .container
+        .automobile__menu
+          h1 услуги для автомобилей
+        .products
+          .products__item
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper
+                  .swiper-slide
+                    img(src="@img/catalog/automobile/kpp-1.jpg", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/automobile/kpp-2.jpg", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/automobile/kpp-3.jpg", alt="")
+                  
+                .swiper-pagination
+            ul
+              li.products__item-name Ручка КПП
+              li Под заказ
+                img(src="@img/ic20-check.svg", alt="")
+              li Ручная работа - каждое изделие Jocato изготовлено мастером вручную;
+              li Натуральная кожа - практичный и долговечный материал;
+              li Цвет на выбор - доступна широкая цветовая палитра;
+              li Стоимость от 1300₽ до 2500₽ в зависимости от сложности работы.
+            a(href="order.html") 
+              button(onclick="document.getElementById('modal01').style.display='none';" title='Close Modal' type='submit') заказать
