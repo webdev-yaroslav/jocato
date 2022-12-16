@@ -2,13 +2,12 @@
 @import "helpers/normalize";
 @import "helpers/basic";
 @import "catalog";
-@import "leather";
-@import "automobile";
 @import "about";
 @import "header";
 @import "footer";
 @import "order";
 @import "delivery";
+@import "product";
 @import "index";
 .main-header {
     background-image: url('@img/headerbg2.png');

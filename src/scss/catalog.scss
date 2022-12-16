@@ -1,121 +1,124 @@
 .catalog {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    @media(max-width: 1000px) {
-        margin-top: 100px;
-    }
+    margin-top: 30px;
+    margin-bottom: 50px;
     .container {
-        h1 {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 46px;
-            line-height: 56px;
-            text-align: right;
-            text-transform: uppercase;
-            @media(max-width: $screenXL) {
-                font-size: 40px;
-            }
-            @media(max-width: $screenL) {
-                font-size: 36px;
-            }
-            @media(max-width: $screenS) {
+        .catalog__menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1 {
+                font-style: normal;
+                font-weight: 400;
                 font-size: 30px;
+                line-height: 56px;
+                text-align: left;
+                text-transform: uppercase;
+                @media(max-width: 1000px) {
+                    display: none;
+                }
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 29px;
+                    @media(max-width: $screenS) {
+                        font-size: 16px;
+                    }
+                }
+                li:not(:last-child) {
+                    margin-right: 20px;
+                }
+                li:hover {
+                    color: #F58F00;
+                }
+                @media(max-width: 1000px) {
+                    margin-top: 50px;
+                }
             }
         }
-        .catalog__wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            @media(max-width: $screenM) {
-                flex-wrap: wrap;
+        .catalog__item {
+            h2 {
+                margin-top: 30px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 56px;
+                text-align: left;
+                text-transform: uppercase;
+                @media(max-width: $screenS) {
+                    font-size: 20px;
+                }
             }
-            .hover-text-one {
-                overflow: hidden;
-                max-width: 100%;
-                list-style: none;
-                text-align: center;
-                figure {
-                    position: relative;
-                    overflow: hidden;
-                    background: #1b1e1f;
-                    display: inline-block;
-                    margin: 0;
-                    @media(max-width: $screenL) {
-                        display: block;
-                    }
+            .products {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .products__item {
+                    margin-top: 20px;
+                    padding: 0px 0px 0px 0px;
+                    border: $main 1px solid;
                     img {
-                        position: relative;
-                        display: block;
-                        min-height: 100%;
-                        opacity: 0.8;
+                        width: 300px; 
+                        height: 400px;
+                        border-bottom: $main 1px solid;
                     }
-                    figcaption {
-                        color: #fff;
-                        text-transform: uppercase;
-                        -webkit-backface-visibility: hidden;
-                        backface-visibility: hidden;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        &::before, &::after {
-                            pointer-events: none;
-                        }
-                        h3 {
+                    .products__item-content {
+                        padding: 5px;
+                        .products__item-title {
                             font-style: normal;
-                            font-weight: 400;
-                            font-size: 46px;
-                            line-height: 56px;
-                            text-align: center;
-                            @media(max-width: $screenS) {
-                                font-size: 40px;
+                            font-weight: 500;
+                            font-size: 20px;
+                            max-width: 300px;
+                        }
+                        .products__item-check {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 5px;
+                            span {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                            }
+                            img {
+                                width: 25px;
+                                height: 25px;
+                                margin-left: 5px;
+                                border: none;
                             }
                         }
+                        .products__item-price {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            margin-top: 5px;
+                        }
                     }
-                }
-            }
-            figure.effect-text-one {
-                img {
-                    opacity: 0.7;
-                    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-                    transition: opacity 0.35s, transform 0.35s;
-                    transform: scale(1.2);
-                }
-                figcaption {
-                    top: auto;
-                    bottom: 0;
-                    height: 60%;
-                }
-                h3 {
-                    color: white !important;
-                    -webkit-transition: -webkit-transform 0.35s;
-                    transition: transform 0.35s;
-                    -webkit-transform: translate3d(0, 40px, 0);
-                    transform: translate3d(0, 40px, 0);
-                }
-                &:hover {
-                    img {
-                        opacity: 1;
+                    .products__item-buttons {
+                        display: flex;
+                        margin-top: 10px;
+                        border-top: $main 1px solid;
+                        button {
+                            font-weight: 500;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            width: 50%;
+                            padding: 10px 0px;
+                            border: none;
+                            color: white;
+                            background-color: #F58F00;
+                        }
+                        button:not(:last-child) {
+                            margin-right: 0px;
+                        }
+                        button:hover {
+                            color: #000;
+                            background-color: #ffffff;
+                        }
                     }
-                    img, h3 {
-                        -webkit-transform: translate3d(0, 0, 0);
-                        transform: translate3d(0, 0, 0);
-                    }
-                }
-            }
-            .hover-text-one {
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-            .hover-text-one:nth-last-child(2) {
-                margin-right: 20px;
-                @media(max-width: $screenM) {
-                    margin-right: 0;
-                    margin-bottom: 20px;
                 }
             }
         }

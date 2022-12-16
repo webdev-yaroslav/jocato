@@ -1,20 +1,83 @@
 extends html/layout/_footerheader2
 block vars
-  - var pageName = 'JOCATO - Каталог'
+  - var pageName = 'JOCATO - Изделия из кожи'
 
 block content
   .page-content
-    section.catalog 
+    section.catalog
       .container
-        h1 каталог
-        .catalog__wrapper
-            a(href="leather.html").hover-text-one
-              figure.effect-text-one 
-                img(src="@img/catalog/coat.png", alt="изделия из кожи")
-                figcaption
-                  h3 изделия из кожи
-            a(href="automobile.html").hover-text-one 
-              figure.effect-text-one 
-                img(src="@img/catalog/rule.png", alt="услуги для автомобилей")
-                figcaption
-                  h3 услуги для автомобилей
+        .catalog__menu
+          h1 изделия из кожи
+          ul 
+            li: a(href="#cash") Кошельки
+            li: a(href="#sum") Сумки
+            li: a(href="#rem") Ремни
+            li: a(href="#acs") Аксессуары
+        #cash.catalog__item
+          h2 кошельки
+          .products
+            .products__item
+              img(src="@img/catalog/coshel-item13.png", alt="")
+              .products__item-content 
+                .products__item-title Кожаный кошелек
+                .products__item-check 
+                  span В наличии
+                  img(src="@img/ic20-check.svg", alt="")
+                .products__item-price 6000 ₽
+              .products__item-buttons
+                button 
+                  a(href="") В корзину
+                button 
+                  a(href="product.html") Подробнее
+
+        #sum.catalog__item
+          h2 сумки
+          .products
+            .products__item
+              img(src="@img/catalog/bag-item33.png", alt="")
+              .products__item-content 
+                .products__item-title Сумка Анна
+                .products__item-check 
+                  span В наличии
+                  img(src="@img/ic20-check.svg", alt="")
+                .products__item-price 12000 ₽
+              .products__item-buttons
+                button 
+                  a(href="") В корзину
+                button 
+                  a(href="") Подробнее
+                
+        #rem.catalog__item
+          h2 ремни
+          .products
+            .products__item
+              img(src="@img/catalog/remen-item4.png", alt="")
+              .products__item-content 
+                .products__item-title Кожаный ремень
+                .products__item-check 
+                  span В наличии
+                  img(src="@img/ic20-check.svg", alt="")
+                .products__item-price 3000 ₽
+              .products__item-buttons
+                button 
+                  a(href="") В корзину
+                button 
+                  a(href="") Подробнее
+
+        #acs.catalog__item
+          h2 аксессуары
+          .products
+            .products__item
+              img(src="@img/catalog/acces-item1.png", alt="")
+              .products__item-content 
+                .products__item-title Брелки
+                .products__item-check 
+                  span В наличии
+                  img(src="@img/ic20-check.svg", alt="")
+                .products__item-price 1000 ₽ шт.
+              .products__item-buttons
+                button 
+                  a(href="") В корзину
+                button 
+                  a(href="") Подробнее
+              

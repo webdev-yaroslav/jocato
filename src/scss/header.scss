@@ -142,6 +142,16 @@
                     border-bottom: 3px solid #f58f00;
                 }
             }
+            .basket {
+                img {
+                    width: 32px;
+                    height: 32px;
+                    @media(max-width: $screenL) {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+            }
         } 
     }
 }
