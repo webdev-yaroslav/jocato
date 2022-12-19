@@ -1,0 +1,46 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'Сумка Евгения'
+
+block content
+  .page-content
+    section.product 
+      .container
+        .catalog__menu
+          ul 
+            li: a(href="catalog.html#cash") Кошельки
+            li: a(href="catalog.html#sum") Сумки
+            li: a(href="catalog.html#rem") Ремни
+            li: a(href="catalog.html#acs") Аксессуары
+        .product__info
+
+          .product__info-main 
+            .product__title Сумка Евгения
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper 
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item8.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item82.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item83.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item84.png", alt="")
+                .swiper-pagination
+            .products__item-buttons
+              button 
+                a(href="order.html") заказать
+
+          .product__info-sidebar
+            .product__title Описание:
+            p Сумка Евгения ручной работы на пришивном фермуаре, из зеленого флотера с авторской вышивкой бисером, с использованием искусственных и природных самоцветов и декоративной тесьмы. С такой сумкой вам захочется отправиться в театр, на концерт классической музыки или выставку живописи. Сумка Евгения - результат кропотливой работы мастерицы-вышивальщицы и  мастерской Jocato. Она всегда  будет привлекать взгляды окружающих. Сумка имеет одно отделение, внутренний карман и карман "на молнии", "в рамке", на внешней стороне. При индивидуальном заказе размеры, цвет и структуру кожи выберем по запросу заказчика.
+            ul 
+              li Материал: натуральная кожа.
+              li Характеристики: фермуар - 20 см. цепочка для сумки, с карабинами - 120 см.
+              li Цвет: бронзовый.
+              li Уход: натуральная кожа прослужит вам долгие годы, если вы будете использовать специальные средства для ухода за натуральной кожей.
+            .products__item-check 
+              span В наличии
+              img(src="@img/ic20-check.svg", alt="")
+            .products__item-price Цена: 20000 ₽

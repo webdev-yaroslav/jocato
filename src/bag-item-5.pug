@@ -1,0 +1,46 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'Мужская сумка'
+
+block content
+  .page-content
+    section.product 
+      .container
+        .catalog__menu
+          ul 
+            li: a(href="catalog.html#cash") Кошельки
+            li: a(href="catalog.html#sum") Сумки
+            li: a(href="catalog.html#rem") Ремни
+            li: a(href="catalog.html#acs") Аксессуары
+        .product__info
+
+          .product__info-main 
+            .product__title Мужская сумка
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper 
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item62.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item63.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item6.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item64.png", alt="")
+                .swiper-pagination
+            .products__item-buttons
+              button 
+                a(href="order.html") заказать
+
+          .product__info-sidebar
+            .product__title Описание:
+            p Мужская сумка из кожи Crazy Horse ручной работы болотного цвета. Искусственная потёртости и дефекты придают этой сумке особый шарм и достоинство. Три отделения "на молнии", четыре кармана, в том числе внешний, "в рамку". Два ремня кожаные и из стропы на карабинах, с регулировкой длины. Она прослужит вам долгие годы и станет любимым аксессуаром. При индивидуальном заказе размеры, цвет и структуру кожи выберем по запросу заказчика.
+            ul 
+              li Материал: натуральная кожа Crazy Horse.
+              li Характеристики: высота сумки - 26 см. ширина сумки - 21 см. длина ремня - 150 см. ширина ремня - 4 см.
+              li Цвет: Чёрный.
+              li Уход: Натуральная кожа crazy horse не требует особого ухода. Потёртости и дефекты, образующиеся в процессе эксплуатации изделия, легко удаляются мягкой шерстяной или синтетической тканью. Однако кожа crazy horse не любит воздействие влаги, моментально впитывает влагу, поэтому лучше избегать попадания жидкостей на кожу данной обработки.
+            .products__item-check 
+              span В наличии
+              img(src="@img/ic20-check.svg", alt="")
+            .products__item-price Цена: 15000 ₽

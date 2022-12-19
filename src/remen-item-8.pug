@@ -1,0 +1,40 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'Кожаный ремень'
+
+block content
+  .page-content
+    section.product 
+      .container
+        .catalog__menu
+          ul 
+            li: a(href="catalog.html#cash") Кошельки
+            li: a(href="catalog.html#sum") Сумки
+            li: a(href="catalog.html#rem") Ремни
+            li: a(href="catalog.html#acs") Аксессуары
+        .product__info
+
+          .product__info-main 
+            .product__title Кожаный ремень
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper 
+                  .swiper-slide
+                    img(src="@img/catalog/remen-item8.png", alt="")
+                .swiper-pagination
+            .products__item-buttons
+              button 
+                a(href="order.html") заказать
+
+          .product__info-sidebar
+            .product__title Описание:
+            p Кожаный ремень из кожи растительного дубления. Отделка: оригинальная отстрочка контрастной нитью по всей длине. Крепление - на ременных болтах. Обработка края ремня средством Tokonole производства Японии. При индивидуальном заказе размеры, цвет и структуру кожи выберем по запросу заказчика. 
+            ul 
+              li Материал: итальянская кожа растительного дубления.
+              li Цвет: сапфир; пряжка: темный никель.
+              li Характеристики: длина - 113 см. ширина - 4 см. Объем талии/бедер от 91 см до 101 см.
+            p Уход: он прослужит вам очень долго, если вы будете пользоваться специальными средствами по уходу за кожаными изделиями. Натуральная кожа не боится высоких и низких температур, но не любит резких перепадов температуры воздуха.
+            .products__item-check 
+              span В наличии
+              img(src="@img/ic20-check.svg", alt="")
+            .products__item-price Цена: 5000 ₽

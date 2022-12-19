@@ -1,0 +1,40 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'Женский кожаный ремень'
+
+block content
+  .page-content
+    section.product 
+      .container
+        .catalog__menu
+          ul 
+            li: a(href="catalog.html#cash") Кошельки
+            li: a(href="catalog.html#sum") Сумки
+            li: a(href="catalog.html#rem") Ремни
+            li: a(href="catalog.html#acs") Аксессуары
+        .product__info
+
+          .product__info-main 
+            .product__title Женский кожаный ремень
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper 
+                  .swiper-slide
+                    img(src="@img/catalog/remen-item6.png", alt="")
+                .swiper-pagination
+            .products__item-buttons
+              button 
+                a(href="order.html") заказать
+
+          .product__info-sidebar
+            .product__title Описание:
+            p Женский кожаный ремень ручной работы. Ремень лаконичный, строгий. Он прослужит вам очень долго и станет отличным дополнением  как повседневной одежды в деловом  стиле, так и одежды в стиле Бохо. Обработка края ремня средством Tokonole производства Японии. При индивидуальном заказе размеры, цвет и структуру кожи выберем по запросу заказчика. 
+            ul 
+              li Материал: кожа чепрак хромового дубления "под рептилию", (лицевая сторона), и хромового дубления чепрак (изнанка).
+              li Цвет: горький шоколад; пряжка: темный никель.
+              li Характеристики: длина - 112 см. ширина - 2 см. Объем талии/бедер от 85 см до 101 см.
+            p Уход: он прослужит вам очень долго, если вы будете пользоваться специальными средствами по уходу за кожаными изделиями. Натуральная кожа не боится высоких и низких температур, но не любит резких перепадов температуры воздуха.
+            .products__item-check 
+              span В наличии
+              img(src="@img/ic20-check.svg", alt="")
+            .products__item-price Цена: 5000 ₽

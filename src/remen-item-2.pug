@@ -1,0 +1,44 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'Кожаный ремень'
+
+block content
+  .page-content
+    section.product 
+      .container
+        .catalog__menu
+          ul 
+            li: a(href="catalog.html#cash") Кошельки
+            li: a(href="catalog.html#sum") Сумки
+            li: a(href="catalog.html#rem") Ремни
+            li: a(href="catalog.html#acs") Аксессуары
+        .product__info
+
+          .product__info-main 
+            .product__title Кожаный ремень
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper 
+                  .swiper-slide
+                    img(src="@img/catalog/remen-item2.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/remen-item22.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/remen-item23.png", alt="")
+                .swiper-pagination
+            .products__item-buttons
+              button 
+                a(href="order.html") заказать
+
+          .product__info-sidebar
+            .product__title Описание:
+            p Крепление пряжки - на ременные винты. Ремень лаконичного стиля, но при этом такой радостной окраски, что просто не сможет остаться в тени, станет ярким дополнением в одежде любого стиля и сезона. Обработка края ремня средством Tokonole производства Японии. При индивидуальном заказе размеры, цвет и структуру кожи выберем по запросу заказчика.
+            ul 
+              li Материал: кожа чепрак хромового дубления.
+              li Цвет: охра; пряжка: латунь "под бронзу".
+              li Характеристики: длина - 110 см. ширина - 3,6 см. Объем талии/бедер от 84 см до 99 см.
+            p Уход: он прослужит вам очень долго, если вы будете пользоваться специальными средствами по уходу за кожаными изделиями. Натуральная кожа не боится высоких и низких температур, но не любит резких перепадов температуры воздуха.
+            .products__item-check 
+              span В наличии
+              img(src="@img/ic20-check.svg", alt="")
+            .products__item-price Цена: 5000 ₽

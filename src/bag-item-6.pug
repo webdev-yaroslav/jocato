@@ -1,0 +1,48 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'Женский клатч'
+
+block content
+  .page-content
+    section.product 
+      .container
+        .catalog__menu
+          ul 
+            li: a(href="catalog.html#cash") Кошельки
+            li: a(href="catalog.html#sum") Сумки
+            li: a(href="catalog.html#rem") Ремни
+            li: a(href="catalog.html#acs") Аксессуары
+        .product__info
+
+          .product__info-main 
+            .product__title Женский клатч
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper 
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item7.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item72.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item73.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item74.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item75.png", alt="")
+                .swiper-pagination
+            .products__item-buttons
+              button 
+                a(href="order.html") заказать
+
+          .product__info-sidebar
+            .product__title Описание:
+            p Женский клатч из кожи с лёгким перламутровым отливом хромового дубления производства Италии. Одно отделение во всю площадь клатча и один карман - в половину размера клатча. Размеры при индивидуальном заказе могут изменяться. Данная модель изготовлена под формат А4. Дополнительно к клатчу мы изготовили ремень на карабинах с регулировкой длины в виде пряжки, которая позволяет использовать клатч как сумку через плечо. Она прослужит вам долгие годы и станет любимым аксессуаром. При индивидуальном заказе размеры, цвет и структуру кожи выберем по запросу заказчика.
+            ul 
+              li Материал: натуральная кожа.
+              li Характеристики: длина сумки - 32 см. ширина сумки - 24 см. ремень длиной - 115 см. ширина ремня - 2 см.
+              li Цвет: Кофе с молоком.
+              li Уход: натуральная кожа прослужит вам долгие годы, если вы будете использовать специальные средства для ухода за натуральной кожей.
+            .products__item-check 
+              span В наличии
+              img(src="@img/ic20-check.svg", alt="")
+            .products__item-price Цена: 10000 ₽

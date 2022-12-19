@@ -1,0 +1,44 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'Обложки на паспорт'
+
+block content
+  .page-content
+    section.product 
+      .container
+        .catalog__menu
+          ul 
+            li: a(href="catalog.html#cash") Кошельки
+            li: a(href="catalog.html#sum") Сумки
+            li: a(href="catalog.html#rem") Ремни
+            li: a(href="catalog.html#acs") Аксессуары
+        .product__info
+
+          .product__info-main 
+            .product__title Обложки на паспорт
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper 
+                  .swiper-slide
+                    img(src="@img/catalog/acces-item-3.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/acces-item-32.png", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/acces-item-33.png", alt="")
+                .swiper-pagination
+            .products__item-buttons
+              button 
+                a(href="order.html") заказать
+
+          .product__info-sidebar
+            .product__title Описание:
+            p Кожаная обложка для паспорта из натуральной кожи ручной работы с внутренними отделениями для карт и водительского удостоверения. Обложка надежно защищает паспорт и другие документы от повреждений и потери. При индивидуальном заказе размеры, цвет и структуру кожи выберем по запросу заказчика.
+            ul 
+              li Материал: итальянская кожа растительного дубления.
+              li Цвет: красное вино.
+              li Дополнения: цвет кожи не однороден, с искусственными потертостями, очень необычен, выглядит очень достойно и современно
+              li Уход: натуральная кожа прослужит вам долгие годы, если вы будете использовать специальные средства для ухода за натуральной кожей.
+            .products__item-check 
+              span В наличии
+              img(src="@img/ic20-check.svg", alt="")
+            .products__item-price Цена: 2000 ₽ с внутренними отделениями. Без отделений: 1200 ₽.

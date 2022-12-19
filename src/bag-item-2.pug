@@ -1,0 +1,45 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'Сумка Анна нежного кремового цвета'
+
+block content
+  .page-content
+    section.product 
+      .container
+        .catalog__menu
+          ul 
+            li: a(href="catalog.html#cash") Кошельки
+            li: a(href="catalog.html#sum") Сумки
+            li: a(href="catalog.html#rem") Ремни
+            li: a(href="catalog.html#acs") Аксессуары
+        .product__info
+
+          .product__info-main 
+            .product__title Сумка Анна нежного кремового цвета
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper 
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item42.jpg", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item43.jpg", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item41.jpg", alt="")
+                .swiper-pagination
+            .products__item-buttons
+              button 
+                a(href="order.html") заказать
+
+          .product__info-sidebar
+            .product__title Описание:
+            p Сумка "Анна" из кремового флотера ручной работы на ремешке через плечо, с клапаном, на замке "молния", с одним внутренним отделением и наружным карманом на "молнии".  Клапан цельнокроенный,  пришивной.  Крепление ремешка - на хольнитены. При индивидуальном заказе размеры, цвет и структуру кожи выберем по запросу заказчика.
+            ul 
+              li Материал: натуральная кожа.
+              li Характеристики: высота - 21 см. ширина - 20 см.
+              li Регулируемая длина ремня: от 95 до 105 см.
+              li Цвет: Кремовый.
+              li Уход: натуральная кожа прослужит вам долгие годы, если вы будете использовать специальные средства для ухода за натуральной кожей.
+            .products__item-check 
+              span В наличии
+              img(src="@img/ic20-check.svg", alt="")
+            .products__item-price Цена: 6000 ₽

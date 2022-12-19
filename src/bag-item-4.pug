@@ -1,0 +1,47 @@
+extends html/layout/_footerheader2
+block vars
+  - var pageName = 'Сумка для телефона'
+
+block content
+  .page-content
+    section.product 
+      .container
+        .catalog__menu
+          ul 
+            li: a(href="catalog.html#cash") Кошельки
+            li: a(href="catalog.html#sum") Сумки
+            li: a(href="catalog.html#rem") Ремни
+            li: a(href="catalog.html#acs") Аксессуары
+        .product__info
+
+          .product__info-main 
+            .product__title Сумка для телефона
+            .product__img 
+              .swiper.mySwiper
+                .swiper-wrapper 
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item21.jpg", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item22.jpg", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item23.jpg", alt="")
+                  .swiper-slide
+                    img(src="@img/catalog/bag-item24.jpg", alt="")
+                .swiper-pagination
+            .products__item-buttons
+              button 
+                a(href="order.html") заказать
+
+          .product__info-sidebar
+            .product__title Описание:
+            p Мужская ременная сумка для телефона из кожи растительного дубления ручной работы с отделкой нитью контрастного цвета. Навесы из карабинов, дополнительный крепеж на бедре в виде ремня с пряжкой. При индивидуальном заказе размеры, цвет и структуру кожи выберем по запросу заказчика.
+            ul 
+              li Материал: натуральная кожа.
+              li Характеристики: при индивидуальном заказе размеры изделия,  дополнительные опции и варианты обсуждаются.
+              li Цвет: Чёрный.
+              li Срок изготовления - 1 месяц.
+              li Уход: натуральная кожа прослужит вам долгие годы, если вы будете использовать специальные средства для ухода за натуральной кожей.
+            .products__item-check 
+              span В наличии
+              img(src="@img/ic20-check.svg", alt="")
+            .products__item-price Цена: 10000 ₽
