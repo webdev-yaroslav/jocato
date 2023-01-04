@@ -1,0 +1,13 @@
+.production {
+    h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20vh;
+        @media(max-width: 1000px) {
+            font-size: 30px;
+        }
+    }
+}
